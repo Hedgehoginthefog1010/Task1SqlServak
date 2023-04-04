@@ -1,0 +1,62 @@
+﻿<Page x:Class="WpfApp10.MainePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp10"
+      mc:Ignorable="d" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      d:DesignHeight="450" 
+      Background="DarkSlateGray"
+      d:DesignWidth="800"
+      Title="MainePage">
+    <Border>
+        <Grid>
+            <Image Source="/Images/llll.jpg" 
+                   Stretch="Uniform" Margin="0,0,261,0"/>
+            <StackPanel Width="250"
+                        Height="250"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Right"
+                       
+                        >
+                <TextBlock
+                    Text="Введите имя"
+                    Width="100"></TextBlock>
+                <TextBox
+                    x:Name="FirstN"
+                    Style="{StaticResource styleText}"></TextBox>
+                <TextBlock
+                    Text="Введите фамилию"
+                    Width="100"></TextBlock>
+                <TextBox
+                    x:Name="PSPPassword"
+                    
+                    Style="{StaticResource styleText}"></TextBox>
+                <Button
+                    x:Name="DaX"
+                    Click="DaX_Click"
+                    Style="{StaticResource MaterialDesignFloatingActionLightButton}"
+                    Background="#FFDAB9"
+                    Content="{materialDesign:PackIcon Kind=Check}"
+                    FontSize="50">
+                    
+                </Button>
+                
+            </StackPanel>
+            <StackPanel
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom">
+                <Button x:Name="Apst"
+                        Click="Apst_Click"
+                        Style="{StaticResource ResourceKey=Manabutton}"/>
+
+            </StackPanel>
+
+
+
+        </Grid>
+    </Border>
+</Page>
