@@ -36,7 +36,7 @@ namespace WpfApp10
         {
             try
             {
-                Users userMode = DataFrame.db.Users.FirstOrDefault(g => g.FirstName = FirstN.Text && g.LastName == PSPPassword.Password);
+                Users userMode = DataFrame.db.Users.FirstOrDefault(g => g.FirstName==FirstN.Text&&g.LastName==PSPPassword.Password);
                 if (userMode != null)
                 {
                     switch (userMode.UsersID)

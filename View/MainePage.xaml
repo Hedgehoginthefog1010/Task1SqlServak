@@ -29,10 +29,15 @@
                 <TextBlock
                     Text="Введите фамилию"
                     Width="100"></TextBlock>
-                <TextBox
+                <PasswordBox
                     x:Name="PSPPassword"
+                    Width="100"
+                    Height="50"
+                    Background="#BC8F8F"
+                    Foreground="Black"
                     
-                    Style="{StaticResource styleText}"></TextBox>
+                    >
+                </PasswordBox>
                 <Button
                     x:Name="DaX"
                     Click="DaX_Click"
